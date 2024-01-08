@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "git-09112023"
+version = "0.1.0"
+description = ""
+authors = ["Ilya Turkevich <illya.turkevich@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.1.1"
+psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+faker = "^22.0.0"
+black = "^23.12.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
