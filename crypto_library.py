@@ -2,7 +2,7 @@ import hashlib
 
 from passlib.context import CryptContext
 
-context = CryptContext(schemes=['bcrypt'], deprecated='auto')
+context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 def get_password_hash(value: str) -> str:
@@ -17,23 +17,10 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     return result
 
 
-data = get_password_hash('password')
-verification = verify_password('password', data)
-
-
-
-
-
-
-
-
-
-
-
+data = get_password_hash("password")
+verification = verify_password("password", data)
 
 
 def encode_md5(value: str) -> str:
     hash = hashlib.md5(value.encode()).hexdigest()
     return hash
-
-
